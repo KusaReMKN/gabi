@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ガビガビ画像ジェネレータ</title>
+<script src="./js/gabi.js" defer></script>
+<style>
+img { max-width: 100%; }
+</style>
+</head>
+<body>
+<h1>ガビガビ画像ジェネレータ</h1>
+<p>Google Chrome を使うとちゃんとガビガビになります</p>
+<form id="gabize">
+<fieldset>
+<legend>ガビガビにする画像を選びなさい！</legend>
+<div>
+<label for="gabi">ガビガビにされる画像</label>
+<input type="file" id="gabi" accept="image/*" required/>
+</div>
+<div>
+<label for="level">綺麗レベル</label>
+<input type="range" id="level" min="0" max="1" step="0.01" required/>
+</div>
+<input type="submit" value="がびがびにする">
+</fieldset>
+</form>
+</body>
